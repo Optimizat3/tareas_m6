@@ -1,0 +1,19 @@
+<h1>Lista de Tareas</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for t in tareas %}
+            <tr>
+                <td>{{ t.id }}</td>
+                <td>{{ t.title }}</td>
+                <td>{{ t.description }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
